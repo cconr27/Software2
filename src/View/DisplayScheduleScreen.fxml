@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DisplayScheduleScreen">
+   <children>
+      <Label layoutX="248.0" layoutY="22.0" text="Dr. Who's Schedule">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <RadioButton layoutX="248.0" layoutY="55.0" mnemonicParsing="false" text="Monthly" />
+      <RadioButton layoutX="393.0" layoutY="55.0" mnemonicParsing="false" text="Weekly" />
+      <TableView layoutX="251.0" layoutY="94.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button layoutX="296.0" layoutY="360.0" mnemonicParsing="false" onAction="#onEditAppt" text="Edit Appointment" />
+      <Button layoutX="294.0" layoutY="319.0" mnemonicParsing="false" onAction="#onNewAppt" text="New Appointment" />
+   </children>
+</AnchorPane>
